@@ -81,6 +81,13 @@ assertBool("verify signature", e1.equals(e2));
 ```
 cd ffi/java
 make test
+
+If fail  
+export CPATH=$CPATH:$JAVA_HOME/include:$JAVA_HOME/include/linux  
+export C_INCLUDE_PATH=$C_INCLUDE_PATH:$JAVA_HOME/include:$JAVA_HOME/include/linux  
+export CPLUS_INCLUDE_PATH=$CPLUS_INCLUDE_PATH:$JAVA_HOME/include:$JAVA_HOME/include/linux  
+
+
 ```
 
 # Sample code
